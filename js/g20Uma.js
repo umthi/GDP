@@ -21,9 +21,9 @@ if(typeof startYear === 'string') {
 if (typeof startYear !== 'number' || isNaN(startYear)) {
   throw new Error('Not a number');
 }
-const rl = readline.createInterface({
-  input: fs.createReadStream('table.csv')
-});
+ const rl = readline.createInterface({
+  input: fs.createReadStream('../ inputdata/table.csv')
+ });
 /* split function for split the lines*/
 rl.on('line', (line) => {
 if(i === 0) {
